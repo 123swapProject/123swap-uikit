@@ -348,7 +348,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#FFFFFF 0%,#FFFFFF 100%);
       background-size: 400% 100%;
     }
 
@@ -398,7 +398,7 @@ it("renders correctly", () => {
       background-clip: text;
       -webkit-animation: fKQuCC 3s ease-in-out infinite;
       animation: fKQuCC 3s ease-in-out infinite;
-      background: linear-gradient(139.73deg,#E6FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg,#FFFFFF 0%,#FFFFFF 100%);
       background-size: 400% 100%;
     }
 
