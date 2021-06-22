@@ -1,7 +1,7 @@
 {
   "name": "@123swap/uikit",
-  "version": "0.23.3",
-  "description": "Set of UI components for pancake projects",
+  "version": "0.23.4",
+  "description": "Set of UI components for 123swap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
