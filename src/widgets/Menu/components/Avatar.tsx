@@ -42,7 +42,7 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
   if (isExternal) {
     return (
       <StyledAvatar title={username}>
-        <a href={link} aria-label={ariaLabel}>
+        <a href="#" aria-label={ariaLabel}>
           {icon}
         </a>
         {showPip && <Pip />}
@@ -52,7 +52,7 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
 
   return (
     <StyledAvatar title={username}>
-      <Link to={link} aria-label={ariaLabel}>
+      <Link to="#" aria-label={ariaLabel}>
         {icon}
       </Link>
       {showPip && <Pip />}
