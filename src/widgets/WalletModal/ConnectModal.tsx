@@ -4,7 +4,7 @@ import {Link} from "../../components/Link";
 import {HelpIcon} from "../../components/Svg";
 import {Modal} from "../Modal";
 import WalletCard from "./WalletCard";
-import config from "./config";
+import {connectors, networks }from "./config";
 import {Login} from "./types";
 import NetworkCard from "./NetworkCard";
 
@@ -25,28 +25,22 @@ const ConnectModal: React.FC<Props> = ({login, onDismiss = () => null}) => (
 
         <h5 style={{marginBottom: "10px"}}>Network</h5>
         <div>
-            <NetworkCard
-                key={"BSC"}
-                networkConfig={{title: "BSC", active:true, disabled: false}}
-            />
-            <NetworkCard
-                key={"ETH"}
-                networkConfig={{title: "ETH", active:false, disabled: true}}
-            />
-            <NetworkCard
-                key={"NEO"}
-                networkConfig={{title: "NEO", active:false, disabled: true}}
-            />
+            {networks.map((entry, index) => (
+                <NetworkCard
+                    key={entry.title}
+                    networkConfig={entry}
+                />
+            ))}
         </div>
 
         <h5 style={{marginBottom: "10px"}}>Wallet</h5>
-        {config.map((entry, index) => (
+        {connectors.map((entry, index) => (
             <WalletCard
                 key={entry.title}
                 login={login}
                 walletConfig={entry}
                 onDismiss={onDismiss}
-                mb={index < config.length - 1 ? "8px" : "0"}
+                mb={index < connectors.length - 1 ? "8px" : "0"}
             />
         ))}
         <HelpLink

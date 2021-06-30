@@ -7,10 +7,25 @@ export enum ConnectorNames {
   BSC = "bsc",
 }
 
+export enum NetworkNames {
+  ETH = "eth",
+  NEO = "neo",
+  BSC = "bsc",
+  HECO = "heco"
+}
+
 export type Login = (connectorId: ConnectorNames) => void;
 
 export interface Config {
   title: string;
   icon: FC<SvgProps>;
   connectorId: ConnectorNames;
+}
+
+export interface NetworkConfig {
+  title: string;
+  icon: FC<SvgProps>;
+  networkId: NetworkNames;
+  active: boolean;
+  disabled: boolean;
 }
