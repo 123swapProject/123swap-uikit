@@ -25,17 +25,17 @@ const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => (
       </Button>
     }
   >
-    {langs.map((lang) => (
-      <MenuButton
-        key={lang.code}
-        fullWidth
-        onClick={() => setLang(lang)}
-        // Safari fix
-        style={{ minHeight: "32px", height: "auto" }}
-      >
-        {lang.language}
-      </MenuButton>
-    ))}
+    {/*{langs.map((lang) => (*/}
+      {/*<MenuButton*/}
+        {/*key={lang.code}*/}
+        {/*fullWidth*/}
+        {/*onClick={() => setLang(lang)}*/}
+        {/*// Safari fix*/}
+        {/*style={{ minHeight: "32px", height: "auto" }}*/}
+      {/*>*/}
+        {/*{lang.language}*/}
+      {/*</MenuButton>*/}
+    {/*))}*/}
   </Dropdown>
 );
 

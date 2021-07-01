@@ -22,7 +22,7 @@ export const links = [
     href: "/",
   },
   {
-    label: "Trade",
+    label: "123swap",
     icon: "TradeIcon",
     items: [
       {
@@ -35,26 +35,49 @@ export const links = [
       },
     ],
   },
-  {
-    label: "Farms",
-    icon: "FarmIcon",
-    href: "/farms",
-    status: status.LIVE,
-  },
-  {
-    label: "Pools",
+    {
+    label: "123yield",
     icon: "PoolIcon",
-    href: "/syrup",
-  },
+    items: [
+        {
+          label: "Farms",
+          icon: "FarmIcon",
+          href: "/farms",
+          status: status.LIVE,
+        },
+        {
+          label: "Pools",
+          icon: "PoolIcon",
+          href: "/syrup",
+        },
+        ]
+    },
+
+    {
+      label: "123bridge",
+      icon: "BridgeIcon",
+      href: "/#",
+    },
+    {
+      label: "123nft",
+      icon: "NftIcon",
+      href: "/##",
+    },
+    {
+      label: "123lend&borrow",
+      icon: "BorrowIcon",
+      href: "/#",
+    },
+    {
+      label: "123gov",
+      icon: "GovIcon",
+      href: "/#",
+    },
+
   // {
   //   label: "Lottery",
   //   icon: "TicketIcon",
   //   href: "/lottery",
-  // },
-  // {
-  //   label: "NFT",
-  //   icon: "NftIcon",
-  //   href: "/nft",
   // },
   // {
   //   label: "Team Battle",
@@ -128,7 +151,11 @@ export const links = [
       },
       // {
       //   label: "Docs",
-      //   href: "https://docs.pancakeswap.finance",
+      //   href: "https://docs.123swap.finance",
+      // },
+      // {
+      //   label: "Contact us",
+      //   href: "https://docs.123swap.finance",
       // },
       // {
       //   label: "Blog",

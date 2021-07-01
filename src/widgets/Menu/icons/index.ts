@@ -1,5 +1,8 @@
+export { default as BorrowIcon } from "./Borrow";
+export { default as BridgeIcon } from "./Bridge";
 export { default as FarmIcon } from "./Farm";
 export { default as GroupsIcon } from "./Groups";
+export { default as GovIcon } from "./Gov";
 export { default as HamburgerIcon } from "./Hamburger";
 export { default as HamburgerCloseIcon } from "./HamburgerClose";
 export { default as HomeIcon } from "./Home";

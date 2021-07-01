@@ -23,7 +23,6 @@ const StyledLink = styled(Link)`
     }
   }
   .desktop-icon {
-    width: 156px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
@@ -50,11 +49,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="132swap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="132swap home page">
           {innerLogo}
         </StyledLink>
       )}
