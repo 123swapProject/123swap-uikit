@@ -21,7 +21,7 @@ const LangSelector: React.FC<Props> = ({ currentLang, langs, setLang }) => (
     position="top-right"
     target={
       <Button variant="text" startIcon={<LanguageIcon color="textSubtle" width="24px" />}>
-        <Text color="textSubtle">{currentLang?.toUpperCase()}</Text>
+        <Text color="textSubtle">EN</Text>
       </Button>
     }
   >
