@@ -149,18 +149,18 @@ export const links = [
                 label: "Github",
                 href: "https://github.com/123swapProject",
             },
-            // {
-            //   label: "Docs",
-            //   href: "https://docs.123swap.finance",
-            // },
-            // {
-            //   label: "Contact us",
-            //   href: "https://docs.123swap.finance",
-            // },
-            // {
-            //   label: "Blog",
-            //   href: "https://pancakeswap.medium.com",
-            // },
+            {
+                label: "Docs",
+                href: "https://docs.123swap.finance",
+            },
+            {
+                label: "Contact us",
+                href: "https://docs.123swap.finance/contact",
+            },
+            {
+                label: "Blog",
+                href: "https://medium.com/@123swap",
+            },
         ],
     },
 ];
@@ -169,17 +169,15 @@ export const socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        items: [
-            {
-                label: "English",
-                href: "https://t.me/123swap",
-            },
-        ],
+        items: [{
+            label: "English",
+            href: "https://t.me/joinchat/ftqKBn8JSsdjZjdk",
+        },]
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/123swap",
+        href: "https://twitter.com/123swapfinance",
     },
 ];
 

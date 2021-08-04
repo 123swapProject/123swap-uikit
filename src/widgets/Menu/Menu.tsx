@@ -10,6 +10,7 @@ import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import {NetworkNames} from "../WalletModal/types";
 
 const Wrapper = styled.div`
   position: relative;
@@ -65,6 +66,8 @@ const Menu: React.FC<NavProps> = ({
   account,
   login,
   logout,
+  network,
+  setNetwork,
   isDark,
   toggleTheme,
   langs,
@@ -80,6 +83,7 @@ const Menu: React.FC<NavProps> = ({
   const [isPushed, setIsPushed] = useState(!isMobile);
   const [showMenu, setShowMenu] = useState(true);
   const refPrevOffset = useRef(window.pageYOffset);
+  network = network != undefined ? network : NetworkNames.BSC;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -123,7 +127,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/"}
         />
         <Flex>
-          <UserBlock account={account} login={login} logout={logout} />
+          <UserBlock account={account} login={login} logout={logout} network={network} setNetwork={setNetwork} />
           {profile && <Avatar profile={profile} />}
         </Flex>
       </StyledNav>

@@ -1,5 +1,5 @@
 import { Colors } from "../../theme/types";
-import { Login } from "../WalletModal/types";
+import {Login, NetworkNames} from "../WalletModal/types";
 
 export interface LangType {
   code: string;
@@ -61,4 +61,6 @@ export interface NavProps extends PanelProps {
   login: Login;
   profile?: Profile;
   logout: () => void;
+  network: NetworkNames;
+  setNetwork?: (network:string) => null;
 }

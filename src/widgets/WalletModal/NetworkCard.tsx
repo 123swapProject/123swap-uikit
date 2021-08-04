@@ -6,18 +6,20 @@ import {NetworkConfig} from "./types";
 
 interface Props {
     networkConfig: NetworkConfig;
+    active:boolean,
+    setNetwork?:(network:string) => null
 }
 
-const NetworkCard: React.FC<Props> = ({networkConfig}) => {
-    const {title, icon: Icon, disabled, active} = networkConfig;
+const NetworkCard: React.FC<Props> = ({networkConfig, active, setNetwork = (network:string) => null}) => {
+    const {title, icon: Icon, disabled } = networkConfig;
     const variant = active ? "primary" : "tertiary";
     const textColor = active ? "success" : "primary";
     return (
         <Button
             disabled={disabled}
-
             variant={variant}
             onClick={() => {
+                setNetwork(networkConfig.networkId);
                 window.localStorage.setItem(networkLocalStorageKey, networkConfig.networkId);
             }}
             style={{justifyContent: "space-between", width: "min-content", display: "inline-block"}}

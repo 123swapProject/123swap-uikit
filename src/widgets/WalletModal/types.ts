@@ -28,4 +28,5 @@ export interface NetworkConfig {
   networkId: NetworkNames;
   active: boolean;
   disabled: boolean;
+  wallets: Config[];
 }

@@ -51,13 +51,62 @@ export const networks: NetworkConfig[] = [
         networkId: NetworkNames.BSC,
         active: true,
         disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "TrustWallet",
+                icon: TrustWallet,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "MathWallet",
+                icon: MathWallet,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "TokenPocket",
+                icon: TokenPocket,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            },
+            {
+                title: "Binance Chain Wallet",
+                icon: BinanceChain,
+                connectorId: ConnectorNames.BSC,
+            },
+            {
+                title: "SafePal Wallet",
+                icon: SafePalWallet,
+                connectorId: ConnectorNames.Injected,
+            },
+]
     },
     {
         title: "ETH",
         icon: Metamask,
         networkId: NetworkNames.ETH,
         active: false,
-        disabled: true,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            },
+        ]
     },
     {
         title: "NEO",
@@ -65,14 +114,16 @@ export const networks: NetworkConfig[] = [
         networkId: NetworkNames.NEO,
         active: false,
         disabled: true,
+        wallets : []
     }, {
         title: "HECO",
         icon: Metamask,
         networkId: NetworkNames.HECO,
         active: false,
         disabled: true,
+        wallets : []
     },
 ]
 
 export const connectorLocalStorageKey = "connectorId";
-export const networkLocalStorageKey = "chainId";
+export const networkLocalStorageKey = "networkId";
