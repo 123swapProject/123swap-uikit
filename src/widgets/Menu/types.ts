@@ -61,6 +61,6 @@ export interface NavProps extends PanelProps {
   login: Login;
   profile?: Profile;
   logout: () => void;
-  network: NetworkNames;
-  setNetwork?: (network:string) => null;
+  network: string;
+  setNetwork?: (network:string) => void;
 }

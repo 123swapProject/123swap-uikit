@@ -1,14 +1,14 @@
 import React from "react";
 import Button from "../../../components/Button/Button";
 import { useWalletModal } from "../../WalletModal";
-import {Login, NetworkNames} from "../../WalletModal/types";
+import {Login} from "../../WalletModal/types";
 
 interface Props {
   account?: string;
   login: Login;
   logout: () => void;
-  network: NetworkNames;
-  setNetwork?: (network:string) => null;
+  network: string;
+  setNetwork?: (network:string) => void;
 }
 
 const UserBlock: React.FC<Props> = ({ account, login, logout, network, setNetwork }) => {
@@ -40,4 +40,4 @@ const UserBlock: React.FC<Props> = ({ account, login, logout, network, setNetwor
   );
 };
 
-export default React.memo(UserBlock, (prevProps, nextProps) => prevProps.account === nextProps.account);
+export default UserBlock;

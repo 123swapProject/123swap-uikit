@@ -99,12 +99,12 @@ export const networks: NetworkConfig[] = [
             {
                 title: "Metamask",
                 icon: Metamask,
-                connectorId: ConnectorNames.Injected,
+                connectorId: ConnectorNames.InjectedUni,
             },
             {
                 title: "WalletConnect",
                 icon: WalletConnect,
-                connectorId: ConnectorNames.WalletConnect,
+                connectorId: ConnectorNames.WalletConnectUni,
             },
         ]
     },

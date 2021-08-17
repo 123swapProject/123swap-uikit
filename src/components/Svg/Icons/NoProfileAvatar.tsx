@@ -1,18 +1,38 @@
 import React from "react";
-import { useTheme } from "styled-components";
+import {useTheme} from "styled-components";
 import Svg from "../Svg";
-import { SvgProps } from "../types";
+import {SvgProps} from "../types";
 
 const Icon: React.FC<SvgProps> = (props) => {
-  const theme = useTheme();
-  const primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
-  const secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
+    const theme = useTheme();
+    const primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
+    const secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
 
-  return (
-       <Svg viewBox="0 0 2500.01 2500" {...props} fill="#ffca09" style={{"fill":"#ffca09"}}>
-          <path d="M764.48,1050.52,1250,565l485.75,485.73,282.5-282.5L1250,0,482,768l282.49,282.5M0,1250,282.51,967.45,565,1249.94,282.49,1532.45Zm764.48,199.51L1250,1935l485.74-485.72,282.65,282.35-.14.15L1250,2500,482,1732l-.4-.4,282.91-282.12M1935,1250.12l282.51-282.51L2500,1250.1,2217.5,1532.61Z"/><path d="M1536.52,1249.85h.12L1250,963.19,1038.13,1175h0l-24.34,24.35-50.2,50.21-.4.39.4.41L1250,1536.81l286.66-286.66.14-.16-.26-.14"/>
-     </Svg>
-  );
+    if (props.network === "eth") {
+        return (
+            <svg xmlns="http://www.w3.org/2000/svg" {...props} viewBox="0 0 32 32">
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="16" cy="16" r="16" fill="#627EEA"/>
+                    <g fill="#FFF" fill-rule="nonzero">
+                        <path fill-opacity=".602" d="M16.498 4v8.87l7.497 3.35z"/>
+                        <path d="M16.498 4L9 16.22l7.498-3.35z"/>
+                        <path fill-opacity=".602" d="M16.498 21.968v6.027L24 17.616z"/>
+                        <path d="M16.498 27.995v-6.028L9 17.616z"/>
+                        <path fill-opacity=".2" d="M16.498 20.573l7.497-4.353-7.497-3.348z"/>
+                        <path fill-opacity=".602" d="M9 16.22l7.498 4.353v-7.701z"/>
+                    </g>
+                </g>
+            </svg>)
+    }
+
+    return (
+        <Svg viewBox="0 0 2500.01 2500" {...props} fill="#ffca09" style={{"fill": "#ffca09"}}>
+            <path
+                d="M764.48,1050.52,1250,565l485.75,485.73,282.5-282.5L1250,0,482,768l282.49,282.5M0,1250,282.51,967.45,565,1249.94,282.49,1532.45Zm764.48,199.51L1250,1935l485.74-485.72,282.65,282.35-.14.15L1250,2500,482,1732l-.4-.4,282.91-282.12M1935,1250.12l282.51-282.51L2500,1250.1,2217.5,1532.61Z"/>
+            <path
+                d="M1536.52,1249.85h.12L1250,963.19,1038.13,1175h0l-24.34,24.35-50.2,50.21-.4.39.4.41L1250,1536.81l286.66-286.66.14-.16-.26-.14"/>
+        </Svg>
+    );
 };
 
 export default Icon;

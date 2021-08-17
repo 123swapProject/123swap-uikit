@@ -10,7 +10,7 @@ import UserBlock from "./components/UserBlock";
 import { NavProps } from "./types";
 import Avatar from "./components/Avatar";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
-import {NetworkNames} from "../WalletModal/types";
+import { NetworkNames } from "../WalletModal/types";
 
 const Wrapper = styled.div`
   position: relative;
@@ -128,7 +128,7 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex>
           <UserBlock account={account} login={login} logout={logout} network={network} setNetwork={setNetwork} />
-          {profile && <Avatar profile={profile} />}
+          {profile && <Avatar profile={profile} network={network} />}
         </Flex>
       </StyledNav>
       <BodyWrapper>

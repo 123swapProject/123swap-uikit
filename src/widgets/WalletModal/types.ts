@@ -5,6 +5,8 @@ export enum ConnectorNames {
   Injected = "injected",
   WalletConnect = "walletconnect",
   BSC = "bsc",
+  InjectedUni = "injected_uni",
+  WalletConnectUni = "walletconnect_uni",
 }
 
 export enum NetworkNames {
@@ -25,7 +27,7 @@ export interface Config {
 export interface NetworkConfig {
   title: string;
   icon: FC<SvgProps>;
-  networkId: NetworkNames;
+  networkId: string;
   active: boolean;
   disabled: boolean;
   wallets: Config[];

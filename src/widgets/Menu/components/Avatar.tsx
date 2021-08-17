@@ -6,6 +6,7 @@ import NoProfileAvatar from "../../../components/Svg/Icons/NoProfileAvatar";
 
 interface AvatarProps {
   profile: Profile;
+  network: string;
 }
 
 const StyledAvatar = styled.div`
@@ -24,7 +25,7 @@ const Pip = styled.div`
   width: 8px;
 `;
 
-const Avatar: React.FC<AvatarProps> = ({ profile }) => {
+const Avatar: React.FC<AvatarProps> = ({ profile, network }) => {
   const { username = "123", image, profileLink, noProfileLink, showPip = false } = profile;
   const link = profile.username ? profileLink : noProfileLink;
   const isExternal = link.startsWith("http");
@@ -32,7 +33,7 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
   const icon = image ? (
     <img src={image} alt="profile avatar" height="32px" width="32px" />
   ) : (
-    <NoProfileAvatar width="32px" height="32px"/>
+    <NoProfileAvatar width="32px" height="32px" network={network}/>
   );
 
   if (isExternal) {

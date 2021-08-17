@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import styled from "styled-components";
 import {Link} from "../../components/Link";
 import {HelpIcon} from "../../components/Svg";
@@ -7,12 +7,11 @@ import WalletCard from "./WalletCard";
 import {connectors, networks} from "./config";
 import {Login} from "./types";
 import NetworkCard from "./NetworkCard";
-import {NetworkNames} from "./index";
 
 interface Props {
     login: Login;
-    network: NetworkNames;
-    setNetwork?: (network:string) => null;
+    network: string;
+    setNetwork?: (network:string) => void;
     onDismiss?: () => void;
 }
 
@@ -23,15 +22,18 @@ const HelpLink = styled(Link)`
   margin-top: 24px;
 `;
 
-const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = () => null}) => (
-    <Modal title="Connect to a wallet" onDismiss={onDismiss}>
+const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = () => null}) => {
+    const [networkId, setNetworkTab] = useState(network);
+
+    return (<Modal title="Connect to a wallet" onDismiss={onDismiss}>
 
         <h5 style={{marginBottom: "10px"}}>Network</h5>
         <div>
             {networks.map((entry, index) => (
                 <NetworkCard
+                    setNetworkTab={setNetworkTab}
                     setNetwork={setNetwork}
-                    active={network==entry.networkId}
+                    active={networkId == entry.networkId}
                     key={entry.title}
                     networkConfig={entry}
                 />
@@ -40,7 +42,7 @@ const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = 
 
         <h5 style={{marginBottom: "10px"}}>Wallet</h5>
 
-        {networks.filter(entry => network==entry.networkId).map((entry, index) => (entry.wallets.map((entry, index) => (
+        {networks.filter(entry => networkId == entry.networkId).map((entry, index) => (entry.wallets.map((entry, index) => (
             <WalletCard
                 key={entry.title}
                 login={login}
@@ -57,7 +59,7 @@ const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = 
             <HelpIcon color="primary" mr="6px"/>
             Learn how to connect
         </HelpLink>
-    </Modal>
-);
+    </Modal>)
+};
 
 export default ConnectModal;
