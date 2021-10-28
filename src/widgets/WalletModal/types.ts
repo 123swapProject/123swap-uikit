@@ -7,13 +7,16 @@ export enum ConnectorNames {
   BSC = "bsc",
   InjectedUni = "injected_uni",
   WalletConnectUni = "walletconnect_uni",
+  InjectedPolygon = "injected_polygon",
+  WalletConnectPolygon = "injected_polygon",
 }
 
 export enum NetworkNames {
   ETH = "eth",
   NEO = "neo",
   BSC = "bsc",
-  HECO = "heco"
+  HECO = "heco",
+  POLYGON = "polygon",
 }
 
 export type Login = (connectorId: ConnectorNames) => void;

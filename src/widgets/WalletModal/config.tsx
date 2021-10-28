@@ -109,12 +109,23 @@ export const networks: NetworkConfig[] = [
         ]
     },
     {
-        title: "NEO",
+        title: "POLY",
         icon: Metamask,
-        networkId: NetworkNames.NEO,
+        networkId: NetworkNames.POLYGON,
         active: false,
-        disabled: true,
-        wallets : []
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.InjectedPolygon,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnectPolygon,
+            },
+        ]
     }, {
         title: "HECO",
         icon: Metamask,
