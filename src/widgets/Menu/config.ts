@@ -169,10 +169,7 @@ export const socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        items: [{
-            label: "English",
-            href: "https://t.me/joinchat/ftqKBn8JSsdjZjdk",
-        },]
+        href: "https://t.me/my123swap_chat",
     },
     {
         label: "Twitter",
