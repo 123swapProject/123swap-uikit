@@ -8,7 +8,7 @@ export enum ConnectorNames {
   InjectedUni = "injected_uni",
   WalletConnectUni = "walletconnect_uni",
   InjectedPolygon = "injected_polygon",
-  WalletConnectPolygon = "injected_polygon",
+  WalletConnectPolygon = "walletconnect_polygon",
 }
 
 export enum NetworkNames {

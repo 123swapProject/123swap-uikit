@@ -48,7 +48,7 @@ export const networks: NetworkConfig[] = [
     {
         title: "BSC",
         icon: Metamask,
-        networkId: NetworkNames.BSC,
+        networkId: "BNB",
         active: true,
         disabled: false,
         wallets : [
@@ -92,47 +92,115 @@ export const networks: NetworkConfig[] = [
     {
         title: "ETH",
         icon: Metamask,
-        networkId: NetworkNames.ETH,
+        networkId: "ETH",
         active: false,
         disabled: false,
         wallets : [
             {
                 title: "Metamask",
                 icon: Metamask,
-                connectorId: ConnectorNames.InjectedUni,
+                connectorId: ConnectorNames.Injected,
             },
             {
                 title: "WalletConnect",
                 icon: WalletConnect,
-                connectorId: ConnectorNames.WalletConnectUni,
+                connectorId: ConnectorNames.WalletConnect,
             },
         ]
     },
     {
         title: "POLY",
         icon: Metamask,
-        networkId: NetworkNames.POLYGON,
+        networkId: "MATIC",
         active: false,
         disabled: false,
         wallets : [
             {
                 title: "Metamask",
                 icon: Metamask,
-                connectorId: ConnectorNames.InjectedPolygon,
+                connectorId: ConnectorNames.Injected,
             },
             {
                 title: "WalletConnect",
                 icon: WalletConnect,
-                connectorId: ConnectorNames.WalletConnectPolygon,
+                connectorId: ConnectorNames.WalletConnect,
             },
         ]
     }, {
-        title: "HECO",
+        title: "AVAL",
         icon: Metamask,
-        networkId: NetworkNames.HECO,
+        networkId: "AVAX",
         active: false,
-        disabled: true,
-        wallets : []
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            },
+        ]
+    },
+    {
+        title: "FTM",
+        icon: Metamask,
+        networkId: "FTM",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            },
+        ]
+    },
+    {
+        title: "HARMONY",
+        icon: Metamask,
+        networkId: "ONE",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
+        title: "MOONBEAM",
+        icon: Metamask,
+        networkId: "MOVR",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
     },
 ]
 
