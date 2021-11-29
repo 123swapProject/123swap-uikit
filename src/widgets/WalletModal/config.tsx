@@ -240,6 +240,25 @@ export const networks: NetworkConfig[] = [
             }
         ]
     },
+    {
+        title: "CRONOS",
+        icon: Metamask,
+        networkId: "CRO",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
 ]
 
 export const connectorLocalStorageKey = "connectorId";
