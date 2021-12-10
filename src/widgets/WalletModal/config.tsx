@@ -259,6 +259,101 @@ export const networks: NetworkConfig[] = [
             }
         ]
     },
+    {
+        title: "ARBITRUM",
+        icon: Metamask,
+        networkId: "ARBITRUM",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
+        title: "XDAI",
+        icon: Metamask,
+        networkId: "XDAI",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
+        title: "CELO",
+        icon: Metamask,
+        networkId: "CELO",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
+        title: "PALM",
+        icon: Metamask,
+        networkId: "PALM",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
+        title: "TELOS",
+        icon: Metamask,
+        networkId: "TELOS",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
 ]
 
 export const connectorLocalStorageKey = "connectorId";

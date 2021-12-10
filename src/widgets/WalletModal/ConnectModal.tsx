@@ -51,7 +51,18 @@ const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = 
             ))}
         </div>
         <div>
-            {networks.slice(9, 14).map((entry, index) => (
+            {networks.slice(9, 13).map((entry, index) => (
+                <NetworkCard
+                    setNetworkTab={setNetworkTab}
+                    setNetwork={setNetwork}
+                    active={networkId == entry.networkId}
+                    key={entry.title}
+                    networkConfig={entry}
+                />
+            ))}
+        </div>
+        <div>
+            {networks.slice(13, 19).map((entry, index) => (
                 <NetworkCard
                     setNetworkTab={setNetworkTab}
                     setNetwork={setNetwork}
