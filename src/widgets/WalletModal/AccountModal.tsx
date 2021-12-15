@@ -14,7 +14,7 @@ interface Props {
 }
 
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
-  <Modal title="Your wallet" onDismiss={onDismiss}>
+  <Modal title="Your wallet" onDismiss={onDismiss} style={{minWidth: "426px"}}>
     <Text
       fontSize="20px"
       bold
@@ -26,12 +26,15 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px">
         View on BscScan
       </LinkExternal>
-      <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
+      <CopyToClipboard toCopy={account}>
+        Copy Address
+      </CopyToClipboard>
     </Flex>
     <Flex justifyContent="center">
       <Button
         scale="sm"
-        variant="secondary"
+        variant="primary"
+        style={{width: "100%", fontSize: "16px"}}
         onClick={() => {
           logout();
           window.localStorage.removeItem(connectorLocalStorageKey);

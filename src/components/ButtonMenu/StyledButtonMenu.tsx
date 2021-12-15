@@ -11,13 +11,14 @@ const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
 };
 
 const StyledButtonMenu = styled.div<{ variant: Variant }>`
-  background-color: ${getBackgroundColor};
-  border-radius: 16px;
+  background-color: transparent;
   display: inline-flex;
+  border-radius: 0;
 
-  & > button + button,
-  & > a + a {
-    margin-left: 2px; // To avoid focus shadow overlap
+  & > button:not(:last-child),
+  & > a:not(:last-child) {
+    border-radius: 0;
+    border-right: solid 2px #353945;
   }
 `;
 

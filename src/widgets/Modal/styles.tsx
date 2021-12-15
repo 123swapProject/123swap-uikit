@@ -11,7 +11,26 @@ export const ModalHeader = styled.div<{ background?: string }>`
   background: ${({ background }) => background || "transparent"};
   border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
   display: flex;
-  padding: 12px 24px;
+  padding-bottom: 40px;
+  margin: 40px;
+  & h2 {
+    font-size: 32px;
+  }
+`;
+export const IconClose = styled.div`
+  border: solid 1px #353945;
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  & :hover {
+      opacity: .8;
+  }
 `;
 
 export const ModalTitle = styled(Flex)`
@@ -21,13 +40,14 @@ export const ModalTitle = styled(Flex)`
 
 export const ModalBody = styled(Flex)`
   flex-direction: column;
+  padding: 0 40px 40px 40px;
 `;
 
 export const ModalCloseButton: React.FC<{ onDismiss: ModalProps["onDismiss"] }> = ({ onDismiss }) => {
   return (
-    <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
-      <CloseIcon color="primary" />
-    </IconButton>
+    <IconClose onClick={onDismiss} aria-label="Close the dialog">
+      <CloseIcon color="success" /> 
+    </IconClose>
   );
 };
 
@@ -40,10 +60,9 @@ export const ModalBackButton: React.FC<{ onBack: ModalProps["onBack"] }> = ({ on
 };
 
 export const ModalContainer = styled(Box)<{ minWidth: string }>`
-  background: ${({ theme }) => theme.modal.background};
-  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  background: #18191D;
   border: 1px solid ${({ theme }) => theme.colors.borderColor};
-  border-radius: 32px;
+  border-radius: 16px;
   width: 100%;
   z-index: ${({ theme }) => theme.zIndices.modal};
 

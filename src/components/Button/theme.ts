@@ -3,22 +3,27 @@ import { scales, variants } from "./types";
 export const scaleVariants = {
   [scales.MD]: {
     height: "48px",
-    padding: "0 24px",
+    padding: "16px 48px",
   },
   [scales.SM]: {
     height: "32px",
-    padding: "0 16px",
+    padding: "16px 48px",
   },
   [scales.XS]: {
     height: "20px",
     fontSize: "12px",
     padding: "0 8px",
   },
+  [scales.NONE]: {
+    height: "20px",
+    fontSize: "12px",
+    padding: "0 40px",
+  },
 };
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
+    backgroundImage: "linear-gradient(109.32deg, #EB5757 -12.08%, #F2994A 127.54%)",
     color: "white",
   },
   [variants.SECONDARY]: {
@@ -32,12 +37,12 @@ export const styleVariants = {
     },
   },
   [variants.TERTIARY]: {
-    backgroundColor: "tertiary",
+    backgroundColor: "#353945",
     boxShadow: "none",
-    color: "primary",
+    color: "success",
   },
   [variants.SUBTLE]: {
-    backgroundColor: "textSubtle",
+    backgroundColor: "transparent",
     color: "white",
   },
   [variants.DANGER]: {
@@ -52,5 +57,6 @@ export const styleVariants = {
     backgroundColor: "transparent",
     color: "primary",
     boxShadow: "none",
+    margin: "0",
   },
 };
