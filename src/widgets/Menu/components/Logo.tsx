@@ -30,6 +30,12 @@ const StyledLink = styled(Link)`
     }
   }
 `;
+const StyledMenuButton = styled(MenuButton)`
+
+    ${({ theme }) => theme.mediaQueries.nav} {
+      display: none;
+    }
+`;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
@@ -42,13 +48,13 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      {/* <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
+      <StyledMenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
         {isPushed ? (
           <HamburgerCloseIcon width="24px" color="textSubtle" />
         ) : (
           <HamburgerIcon width="24px" color="textSubtle" />
         )}
-        </MenuButton> */}
+        </StyledMenuButton>
       {isAbsoluteUrl ? (
         <StyledLink as="a" href={href} aria-label="132swap home page">
           {innerLogo}

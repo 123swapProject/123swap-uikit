@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 import styled from "styled-components";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";
-import { AddIcon, AutoRenewIcon, HistoryIcon } from "../Svg";
+import { AddIcon, AutoRenewIcon, HistoryIcon, ArrowRightIcon } from "../Svg";
 import IconButton from "./IconButton";
 import Button from "./Button";
 import { ExpandableButton, ExpandableLabel } from "./ExpandableButton";
@@ -117,7 +117,7 @@ export const Variants: React.FC = () => {
         </Row>
         <Row>
           <Button startIcon={<HistoryIcon />}>Start Icon</Button>
-          <Button endIcon={<HistoryIcon />}>End Icon</Button>
+          <Button endIcon={<ArrowRightIcon />}>End Icon</Button>
           <Button startIcon={<HistoryIcon />} endIcon={<HistoryIcon />}>
             Start & End Icon
           </Button>

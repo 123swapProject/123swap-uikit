@@ -15,6 +15,8 @@ import MoonNetwork from "./icons/MoonNetwork";
 import HecoNetwork from "./icons/HecoNetwork";
 import OkexNetwork from "./icons/OkexNetwork";
 import CronosNetwork from "./icons/CronosNetwork";
+import XdaiNetwork from "./icons/XdaiNetwork";
+import CeloNetwork from "./icons/CeloNetwork";
 import {Config, ConnectorNames, NetworkConfig, NetworkNames} from "./types";
 
 export const connectors: Config[] = [
@@ -290,7 +292,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "XDAI",
-        icon: Metamask,
+        icon: XdaiNetwork,
         networkId: "XDAI",
         active: false,
         disabled: false,
@@ -309,7 +311,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "CELO",
-        icon: Metamask,
+        icon: CeloNetwork,
         networkId: "CELO",
         active: false,
         disabled: false,
