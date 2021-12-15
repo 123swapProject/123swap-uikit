@@ -28,6 +28,7 @@ const HelpLink = styled(Link)`
 const StyledModal = styled(Modal)`
   min-width: initial;
   max-width: 512px;
+  overflow: auto;
   
   & h5 {
     color: ${({ theme }) => theme.colors.input};

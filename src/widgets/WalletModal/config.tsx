@@ -17,6 +17,9 @@ import OkexNetwork from "./icons/OkexNetwork";
 import CronosNetwork from "./icons/CronosNetwork";
 import XdaiNetwork from "./icons/XdaiNetwork";
 import CeloNetwork from "./icons/CeloNetwork";
+import TelosNetwork from "./icons/TelosNetwork";
+import PalmNetwork from "./icons/PalmNetwork";
+import ArbitrumNetwork from "./icons/ArbitrumNetwork";
 import {Config, ConnectorNames, NetworkConfig, NetworkNames} from "./types";
 
 export const connectors: Config[] = [
@@ -273,7 +276,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "ARBITRUM",
-        icon: Metamask,
+        icon: ArbitrumNetwork,
         networkId: "ARBITRUM",
         active: false,
         disabled: false,
@@ -330,7 +333,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "PALM",
-        icon: Metamask,
+        icon: PalmNetwork,
         networkId: "PALM",
         active: false,
         disabled: false,
@@ -349,7 +352,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "TELOS",
-        icon: Metamask,
+        icon: TelosNetwork,
         networkId: "TELOS",
         active: false,
         disabled: false,

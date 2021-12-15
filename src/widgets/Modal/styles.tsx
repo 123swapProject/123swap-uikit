@@ -18,7 +18,7 @@ export const ModalHeader = styled.div<{ background?: string }>`
   }
 `;
 export const IconClose = styled.div`
-  border: solid 1px #353945;
+  border: solid 1px ${({ theme }) => theme.colors.borderColor};
   border-radius: 50%;
   padding: 5px;
   width: 35px;
@@ -28,6 +28,9 @@ export const IconClose = styled.div`
   align-items: center;
   cursor: pointer;
   transition: opacity 0.2s;
+  svg {
+    fill: ${({ theme }) => theme.colors.borderColor};
+  }
   & :hover {
       opacity: .8;
   }
@@ -60,7 +63,7 @@ export const ModalBackButton: React.FC<{ onBack: ModalProps["onBack"] }> = ({ on
 };
 
 export const ModalContainer = styled(Box)<{ minWidth: string }>`
-  background: #18191D;
+  background: ${({ theme }) => theme.colors.secondBackground};
   border: 1px solid ${({ theme }) => theme.colors.borderColor};
   border-radius: 16px;
   width: 100%;
