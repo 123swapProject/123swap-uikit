@@ -19,6 +19,9 @@ const Container = styled.div`
   flex-direction: column;
   // Safari fix
   flex-shrink: 0;
+  & svg {
+    fill: none;
+  }
 `;
 
 const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`

@@ -20,16 +20,41 @@ const HelpLink = styled(Link)`
   align-self: center;
   align-items: center;
   margin-top: 24px;
+  background: ${({ theme }) => theme.colors.gradients.linear};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
+const StyledModal = styled(Modal)`
+  min-width: initial;
+  max-width: 512px;
+  overflow: auto;
+  
+  & h5 {
+    color: ${({ theme }) => theme.colors.input};
+  }
+`;
+const StyledNetworks = styled.div`
+  display: flex;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  & button {
+    flex: 1 0 21%;
+    margin: 5px;
+    height: 100px;
+    flex: 1 0 21%;
+    padding: 5px;
+  }
 `;
 
 const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = () => null}) => {
     const [networkId, setNetworkTab] = useState(network);
 
-    return (<Modal title="Connect to a wallet" onDismiss={onDismiss}>
+    return (<StyledModal title="Connect wallet" onDismiss={onDismiss} >
 
         <h5 style={{marginBottom: "10px"}}>Network</h5>
-        <div>
-            {networks.slice(0, 5).map((entry, index) => (
+        <StyledNetworks>
+            {networks.map((entry, index) => (
                 <NetworkCard
                     setNetworkTab={setNetworkTab}
                     setNetwork={setNetwork}
@@ -38,41 +63,7 @@ const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = 
                     networkConfig={entry}
                 />
             ))}
-        </div>
-        <div>
-            {networks.slice(5, 9).map((entry, index) => (
-                <NetworkCard
-                    setNetworkTab={setNetworkTab}
-                    setNetwork={setNetwork}
-                    active={networkId == entry.networkId}
-                    key={entry.title}
-                    networkConfig={entry}
-                />
-            ))}
-        </div>
-        <div>
-            {networks.slice(9, 13).map((entry, index) => (
-                <NetworkCard
-                    setNetworkTab={setNetworkTab}
-                    setNetwork={setNetwork}
-                    active={networkId == entry.networkId}
-                    key={entry.title}
-                    networkConfig={entry}
-                />
-            ))}
-        </div>
-        <div>
-            {networks.slice(13, 19).map((entry, index) => (
-                <NetworkCard
-                    setNetworkTab={setNetworkTab}
-                    setNetwork={setNetwork}
-                    active={networkId == entry.networkId}
-                    key={entry.title}
-                    networkConfig={entry}
-                />
-            ))}
-        </div>
-
+        </StyledNetworks>
         <h5 style={{marginBottom: "10px"}}>Wallet</h5>
 
         {networks.filter(entry => networkId == entry.networkId).map((entry, index) => (entry.wallets.map((entry, index) => (
@@ -92,7 +83,7 @@ const ConnectModal: React.FC<Props> = ({login, network, setNetwork, onDismiss = 
             <HelpIcon color="primary" mr="6px"/>
             Learn how to connect
         </HelpLink>
-    </Modal>)
+    </StyledModal>)
 };
 
 export default ConnectModal;

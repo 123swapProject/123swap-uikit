@@ -5,6 +5,21 @@ import TrustWallet from "./icons/TrustWallet";
 import WalletConnect from "./icons/WalletConnect";
 import BinanceChain from "./icons/BinanceChain";
 import SafePalWallet from "./icons/SafePalWallet";
+import BinanceNetwork from "./icons/BinanceNetwork";
+import EtheriumNetwork from "./icons/EtheriumNetwork";
+import PolyNetwork from "./icons/PolyNetwork";
+import AvalNetwork from "./icons/AvalNetwork";
+import FtmNetwork from "./icons/FtmNetwork";
+import HarmonyNetwork from "./icons/HarmonyNetwork";
+import MoonNetwork from "./icons/MoonNetwork";
+import HecoNetwork from "./icons/HecoNetwork";
+import OkexNetwork from "./icons/OkexNetwork";
+import CronosNetwork from "./icons/CronosNetwork";
+import XdaiNetwork from "./icons/XdaiNetwork";
+import CeloNetwork from "./icons/CeloNetwork";
+import TelosNetwork from "./icons/TelosNetwork";
+import PalmNetwork from "./icons/PalmNetwork";
+import ArbitrumNetwork from "./icons/ArbitrumNetwork";
 import {Config, ConnectorNames, NetworkConfig, NetworkNames} from "./types";
 
 export const connectors: Config[] = [
@@ -47,7 +62,7 @@ export const connectors: Config[] = [
 export const networks: NetworkConfig[] = [
     {
         title: "BSC",
-        icon: Metamask,
+        icon: BinanceNetwork,
         networkId: "BNB",
         active: true,
         disabled: false,
@@ -91,7 +106,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "ETH",
-        icon: Metamask,
+        icon: EtheriumNetwork,
         networkId: "ETH",
         active: false,
         disabled: false,
@@ -110,7 +125,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "POLY",
-        icon: Metamask,
+        icon: PolyNetwork,
         networkId: "MATIC",
         active: false,
         disabled: false,
@@ -128,7 +143,7 @@ export const networks: NetworkConfig[] = [
         ]
     }, {
         title: "AVAL",
-        icon: Metamask,
+        icon: AvalNetwork,
         networkId: "AVAX",
         active: false,
         disabled: false,
@@ -147,7 +162,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "FTM",
-        icon: Metamask,
+        icon: FtmNetwork,
         networkId: "FTM",
         active: false,
         disabled: false,
@@ -166,7 +181,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "HARMONY",
-        icon: Metamask,
+        icon: HarmonyNetwork,
         networkId: "ONE",
         active: false,
         disabled: false,
@@ -185,7 +200,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "MOON",
-        icon: Metamask,
+        icon: MoonNetwork,
         networkId: "MOVR",
         active: false,
         disabled: false,
@@ -204,7 +219,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "HECO",
-        icon: Metamask,
+        icon: HecoNetwork,
         networkId: "HT",
         active: false,
         disabled: false,
@@ -223,7 +238,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "OKEX",
-        icon: Metamask,
+        icon: OkexNetwork,
         networkId: "OKT",
         active: false,
         disabled: false,
@@ -242,7 +257,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "CRONOS",
-        icon: Metamask,
+        icon: CronosNetwork,
         networkId: "CRO",
         active: false,
         disabled: false,
@@ -261,7 +276,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "ARBITRUM",
-        icon: Metamask,
+        icon: ArbitrumNetwork,
         networkId: "ARBITRUM",
         active: false,
         disabled: false,
@@ -280,7 +295,7 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "XDAI",
-        icon: Metamask,
+        icon: XdaiNetwork,
         networkId: "XDAI",
         active: false,
         disabled: false,
@@ -298,8 +313,27 @@ export const networks: NetworkConfig[] = [
         ]
     },
     {
+        title: "CELO",
+        icon: CeloNetwork,
+        networkId: "CELO",
+        active: false,
+        disabled: false,
+        wallets : [
+            {
+                title: "Metamask",
+                icon: Metamask,
+                connectorId: ConnectorNames.Injected,
+            },
+            {
+                title: "WalletConnect",
+                icon: WalletConnect,
+                connectorId: ConnectorNames.WalletConnect,
+            }
+        ]
+    },
+    {
         title: "PALM",
-        icon: Metamask,
+        icon: PalmNetwork,
         networkId: "PALM",
         active: false,
         disabled: false,
@@ -318,8 +352,8 @@ export const networks: NetworkConfig[] = [
     },
     {
         title: "TELOS",
-        icon: Metamask,
-        networkId: "TLOS",
+        icon: TelosNetwork,
+        networkId: "TELOS",
         active: false,
         disabled: false,
         wallets : [

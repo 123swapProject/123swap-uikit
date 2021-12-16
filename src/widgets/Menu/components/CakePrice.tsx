@@ -11,6 +11,11 @@ interface Props {
 const PriceLink = styled.a`
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+  border-top: solid 1px #23262F;
+  border-bottom: solid 1px #23262F;
   svg {
     transition: transform 0.3s;
   }
@@ -20,6 +25,13 @@ const PriceLink = styled.a`
     }
   }
 `;
+const SkeletonWrap = styled.div`
+  width: 100%;
+  padding: 20px;
+  border-top: solid 1px #23262F;
+  border-bottom: solid 1px #23262F;
+
+`;
 
 const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
   return cakePriceUsd ? (
@@ -28,7 +40,9 @@ const CakePrice: React.FC<Props> = ({ cakePriceUsd }) => {
       <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
   ) : (
-    <Skeleton width={80} height={24} />
+    <SkeletonWrap>
+      <Skeleton width={80} height={24}/>
+    </SkeletonWrap>
   );
 };
 

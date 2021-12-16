@@ -17,11 +17,6 @@ export const status = {
 
 export const links = [
     {
-        label: "Home",
-        icon: "HomeIcon",
-        href: "https://exchange.123swap.finance",
-    },
-    {
         label: "123swap",
         icon: "TradeIcon",
         items: [
@@ -167,18 +162,55 @@ export const links = [
 
 export const socials = [
     {
-        label: "Telegram",
-        icon: "TelegramIcon",
-        href: "https://t.me/my123swap_chat",
+        label: "Linkedin",
+        icon: "LinkedinIcon",
+        href: "https://www.linkedin.com/company/123swap/",
+    },
+    {
+        label: "Youtube",
+        icon: "YoutubeIcon",
+        href: "https://www.youtube.com/watch?v=3mOhzIAlgwQ",
+    },
+    {
+        label: "Reddit",
+        icon: "RedditIcon",
+        href: "https://www.reddit.com/r/123swap/",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
         href: "https://twitter.com/123swapfinance",
     },
+    {
+        label: "Telegram",
+        icon: "TelegramIcon",
+        href: "https://t.me/my123swap_chat",
+    },
+    {
+        label: "Facebook",
+        icon: "FacebookIcon",
+        href: "https://www.facebook.com/123swapfinance/",
+    },
+    {
+        label: "Discord",
+        icon: "DiscordIcon",
+        href: "https://discord.com/invite/arNbvrPgZx",
+    },
+    {
+        label: "Medium",
+        icon: "MediumIcon",
+        href: "https://medium.com/@123swap",
+    },
+    {
+        label: "Github",
+        icon: "GithubIcon",
+        href: "https://github.com/123swapProject",
+    },
 ];
 
 export const MENU_HEIGHT = 64;
+export const MENU_SOCIAL_HEIGHT = 190;
+export const MENU_PRICE_HEIGHT = 60;
 export const MENU_ENTRY_HEIGHT = 48;
-export const SIDEBAR_WIDTH_FULL = 240;
+export const SIDEBAR_WIDTH_FULL = 180;
 export const SIDEBAR_WIDTH_REDUCED = 56;

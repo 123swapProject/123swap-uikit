@@ -31,32 +31,32 @@ export const Default: React.FC = () => {
       <Row>
         <ButtonMenu activeIndex={index} onItemClick={handleClick}>
           <ButtonMenuItem>Button 1</ButtonMenuItem>
-          <ButtonMenuItem>Button 2</ButtonMenuItem>
-          <ButtonMenuItem>Button 3</ButtonMenuItem>
-          <ButtonMenuItem>Button 4</ButtonMenuItem>
+          <ButtonMenuItem>Button 1</ButtonMenuItem>
+          <ButtonMenuItem>Button 1</ButtonMenuItem>
+          <ButtonMenuItem>Button 1</ButtonMenuItem>
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="sm">
-          <ButtonMenuItem>Button 1</ButtonMenuItem>
+        <ButtonMenu activeIndex={index1} onItemClick={handleClick1}>
           <ButtonMenuItem>Button 2</ButtonMenuItem>
-          <ButtonMenuItem>Button 3</ButtonMenuItem>
-          <ButtonMenuItem>Button 4</ButtonMenuItem>
+          <ButtonMenuItem>Button 2</ButtonMenuItem>
+          <ButtonMenuItem>Button 2</ButtonMenuItem>
+          <ButtonMenuItem>Button 2</ButtonMenuItem>
         </ButtonMenu>
       </Row>
       <Row>
         <ButtonMenu activeIndex={index} onItemClick={handleClick} variant="subtle">
-          <ButtonMenuItem>Button 1</ButtonMenuItem>
-          <ButtonMenuItem>Button 2</ButtonMenuItem>
           <ButtonMenuItem>Button 3</ButtonMenuItem>
-          <ButtonMenuItem>Button 4</ButtonMenuItem>
+          <ButtonMenuItem>Button 3</ButtonMenuItem>
+          <ButtonMenuItem>Button 3</ButtonMenuItem>
+          <ButtonMenuItem>Button 3</ButtonMenuItem>
         </ButtonMenu>
       </Row>
       <Row>
-        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="sm" variant="subtle">
-          <ButtonMenuItem>Button 1</ButtonMenuItem>
-          <ButtonMenuItem>Button 2</ButtonMenuItem>
-          <ButtonMenuItem>Button 3</ButtonMenuItem>
+        <ButtonMenu activeIndex={index1} onItemClick={handleClick1} scale="none" variant="subtle">
+          <ButtonMenuItem>Button 4</ButtonMenuItem>
+          <ButtonMenuItem>Button 4</ButtonMenuItem>
+          <ButtonMenuItem>Button 4</ButtonMenuItem>
           <ButtonMenuItem>Button 4</ButtonMenuItem>
         </ButtonMenu>
       </Row>

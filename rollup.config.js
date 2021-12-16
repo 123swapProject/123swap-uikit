@@ -1,6 +1,7 @@
 import typescript from "@rollup/plugin-typescript";
 import url from "@rollup/plugin-url";
 import pkg from "./package.json";
+import commonjs from "@rollup/plugin-commonjs";
 
 export default {
   input: "src/index.ts",
@@ -8,5 +9,9 @@ export default {
     { file: pkg.main, format: "cjs" },
     { file: pkg.module, format: "es" },
   ],
-  plugins: [url(), typescript()],
+  plugins: [
+    url(), 
+    typescript(),
+    commonjs(),
+  ],
 };

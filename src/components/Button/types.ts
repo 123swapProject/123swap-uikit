@@ -6,6 +6,7 @@ export const scales = {
   MD: "md",
   SM: "sm",
   XS: "xs",
+  NONE: "none",
 } as const;
 
 export const variants = {

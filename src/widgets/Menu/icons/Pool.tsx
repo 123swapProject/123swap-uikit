@@ -5,8 +5,22 @@ import { SvgProps } from "../../../components/Svg/types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 24 24" {...props}>
-          <path d="M17.2,5V5C17.8,5 18.4,5 18.9,5.1C19.1,7.4 19.1,12 16.4,15.2C14.4,17.7 11,19 6.4,19C6,19 5.5,19 5.1,19C4.9,14.4 5.8,10.8 7.9,8.5C10.4,5.6 14.4,5 17.2,5M17.2,3C11.7,3 1.6,5.1 3.2,20.8C4.3,20.9 5.4,21 6.4,21C24.3,21 20.7,3.3 20.7,3.3C20.7,3.3 19.3,3 17.2,3M17,7C7,7 7,17 7,17C11,9 17,7 17,7Z"></path>
-    </Svg>
+         
+
+<path d="M16.7998 8.40005H17.6998" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.0996 8.40005H18.3996C19.9996 8.40005 21.2996 9.70005 21.2996 11.4001V18.3001C21.2996 20.0001 19.9996 21.3001 18.3996 21.3001H5.49961C3.89961 21.3001 2.59961 20.0001 2.59961 18.3001V11.4001C2.59961 9.70005 3.89961 8.40005 5.49961 8.40005H6.99961" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.8994 2.90009V11.2001" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.8994 11.2001L14.7994 8.30008" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.8996 11.2001L9.09961 8.30008" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.0004 14.7H8.90039" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.0004 17.7H8.90039" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+         
+         
+         
+         
+         </Svg>
   );
 };
 

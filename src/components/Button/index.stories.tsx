@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 import styled from "styled-components";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";
-import { AddIcon, AutoRenewIcon, LogoIcon } from "../Svg";
+import { AddIcon, AutoRenewIcon, HistoryIcon, ArrowRightIcon } from "../Svg";
 import IconButton from "./IconButton";
 import Button from "./Button";
 import { ExpandableButton, ExpandableLabel } from "./ExpandableButton";
@@ -116,15 +116,15 @@ export const Variants: React.FC = () => {
           </Button>
         </Row>
         <Row>
-          <Button startIcon={<LogoIcon />}>Start Icon</Button>
-          <Button endIcon={<LogoIcon />}>End Icon</Button>
-          <Button startIcon={<LogoIcon />} endIcon={<LogoIcon />}>
+          <Button startIcon={<HistoryIcon />}>Start Icon</Button>
+          <Button endIcon={<ArrowRightIcon />}>End Icon</Button>
+          <Button startIcon={<HistoryIcon />} endIcon={<HistoryIcon />}>
             Start & End Icon
           </Button>
         </Row>
         <Row>
           <IconButton>
-            <LogoIcon />
+            <HistoryIcon />
           </IconButton>
           <IconButton variant="secondary">
             <AddIcon />
@@ -132,7 +132,7 @@ export const Variants: React.FC = () => {
         </Row>
         <Row>
           <IconButton scale="sm" variant="danger">
-            <LogoIcon />
+            <HistoryIcon />
           </IconButton>
           <IconButton scale="sm" variant="success">
             <AddIcon color="currentColor" />
