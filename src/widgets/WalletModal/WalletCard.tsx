@@ -11,6 +11,7 @@ interface Props {
   mb: string;
 }
 
+
 const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => {
   const { title, icon: Icon } = walletConfig;
   return (
@@ -23,7 +24,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
         window.localStorage.setItem(connectorLocalStorageKey, walletConfig.connectorId);
         onDismiss();
       }}
-      style={{ justifyContent: "space-between" }}
+      style={{ justifyContent: "space-between", background: "inputSecondary" }}
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
