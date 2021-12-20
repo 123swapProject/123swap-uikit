@@ -4,13 +4,8 @@ import { SvgProps } from "../../../components/Svg/types";
 
 const Icon: React.FC<SvgProps> = (props) => {
   return (
-    <Svg viewBox="0 0 14 20"  {...props} height="22px">
-      <path d="M13.1701 19.25H0.830078" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M11.6299 4.86003H2.37988V19.25H11.6299V4.86003Z" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M9.31042 1.78003H4.69043V4.86003H9.31042V1.78003Z" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M7 1.78003V0.750031" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.54004 7.94003V16.17" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5.45996 7.94003V16.17" stroke="#777E90" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <Svg viewBox="0 0 24 24"  {...props}>
+      <path d="M5.83002 22H18.17C18.58 22 18.92 21.66 18.92 21.25C18.92 20.83 18.58 20.5 18.17 20.5H17.38V6.86C17.38 6.44 17.04 6.11 16.62 6.11H15.06V3.77C15.06 3.36 14.73 3.02 14.31 3.02H12.75V2.75C12.75 2.33 12.41 2 12 2C11.59 2 11.25 2.33 11.25 2.75V3.02H9.69002C9.27002 3.02 8.94002 3.36 8.94002 3.77V6.11H7.38002C6.96002 6.11 6.62001 6.44 6.62001 6.86V20.5H5.83002C5.42002 20.5 5.08002 20.83 5.08002 21.25C5.08002 21.66 5.42002 22 5.83002 22ZM14.29 9.94V18.16C14.29 18.58 13.96 18.91 13.54 18.91C13.13 18.91 12.79 18.58 12.79 18.16V9.94C12.79 9.53 13.13 9.19 13.54 9.19C13.96 9.19 14.29 9.53 14.29 9.94ZM9.71002 9.94C9.71002 9.53 10.04 9.19 10.46 9.19C10.87 9.19 11.21 9.53 11.21 9.94V18.16C11.21 18.58 10.87 18.91 10.46 18.91C10.04 18.91 9.71002 18.58 9.71002 18.16V9.94ZM10.44 4.52H13.56V6.11H10.44V4.52Z"/>
     </Svg>
   );
 };

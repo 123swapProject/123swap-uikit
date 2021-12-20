@@ -45,7 +45,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: none;
+    fill: ${({ theme }) => theme.colors.textMenu};
   }
 
   &:hover {
