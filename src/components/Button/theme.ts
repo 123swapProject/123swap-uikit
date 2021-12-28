@@ -27,6 +27,7 @@ export const styleVariants = {
     color: "white",
   },
   [variants.SECONDARY]: {
+    backgroundImage: "none",
     backgroundColor: "transparent",
     border: "2px solid",
     borderColor: "primary",
@@ -37,9 +38,9 @@ export const styleVariants = {
     },
   },
   [variants.TERTIARY]: {
-    backgroundColor: "#353945",
+    backgroundColor: "tertiary",
     boxShadow: "none",
-    color: "success",
+    color: "contrast",
   },
   [variants.SUBTLE]: {
     backgroundColor: "transparent",
@@ -58,5 +59,10 @@ export const styleVariants = {
     color: "primary",
     boxShadow: "none",
     margin: "0",
+  },
+  [variants.ACTIVE]: {
+    backgroundColor: "textMenu",
+    color: "active",
+    borderRadius: "50px",
   },
 };

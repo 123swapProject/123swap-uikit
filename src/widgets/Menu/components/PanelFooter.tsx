@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const SettingsEntry = styled.div`
   display: flex;
-  border-top: solid 1px #23262F;
+  border-top: solid 1px ${({ theme }) => theme.colors.borderColor};
   align-items: center;
   justify-content: space-around;
   height: ${MENU_PRICE_HEIGHT}px;

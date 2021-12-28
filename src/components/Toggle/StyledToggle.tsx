@@ -65,7 +65,7 @@ const StyledToggle = styled.div<ToggleProps>`
   align-items: center;
   background-color: transparent;
   border-radius: 24px;
-  border: 1px solid #353945;
+  border: 1px solid ${({ theme }) => theme.colors.borderColor};
   cursor: pointer;
   display: inline-flex;
   height: ${getScale("toggleHeight")};

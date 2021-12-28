@@ -5,15 +5,9 @@ import { SvgProps } from "../types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 24 24" {...props}>
-<path d="M19.1899 4.85001H21.2499" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.75 4.85001H15.08" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.1401 6.89C18.2778 6.89 19.2001 5.97666 19.2001 4.85C19.2001 3.72334 18.2778 2.81 17.1401 2.81C16.0024 2.81 15.0801 3.72334 15.0801 4.85C15.0801 5.97666 16.0024 6.89 17.1401 6.89Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M19.1899 19.15H21.2499" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.75 19.15H15.08" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.1401 21.19C18.2778 21.19 19.2001 20.2767 19.2001 19.15C19.2001 18.0233 18.2778 17.11 17.1401 17.11C16.0024 17.11 15.0801 18.0233 15.0801 19.15C15.0801 20.2767 16.0024 21.19 17.1401 21.19Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.91992 12H21.2499" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.75 12H4.81" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.86005 14.04C7.99775 14.04 8.92007 13.1267 8.92007 12C8.92007 10.8733 7.99775 9.95999 6.86005 9.95999C5.72234 9.95999 4.80005 10.8733 4.80005 12C4.80005 13.1267 5.72234 14.04 6.86005 14.04Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 12C22 12.41 21.66 12.75 21.25 12.75H9.54999C9.21999 13.92 8.14999 14.79 6.85999 14.79C5.57999 14.79 4.50001 13.92 4.17001 12.75H2.75C2.34 12.75 2 12.41 2 12C2 11.59 2.34 11.25 2.75 11.25H4.17001C4.50001 10.08 5.57999 9.20999 6.85999 9.20999C8.14999 9.20999 9.21999 10.08 9.54999 11.25H21.25C21.66 11.25 22 11.59 22 12Z"/>
+      <path d="M22 19.15C22 19.57 21.66 19.9 21.25 19.9H19.83C19.5 21.08 18.42 21.94 17.14 21.94C15.86 21.94 14.78 21.08 14.45 19.9H2.75C2.34 19.9 2 19.57 2 19.15C2 18.74 2.34 18.4 2.75 18.4H14.45C14.78 17.23 15.86 16.36 17.14 16.36C18.42 16.36 19.5 17.23 19.83 18.4H21.25C21.66 18.4 22 18.74 22 19.15Z"/>
+      <path d="M22 4.85C22 5.26 21.66 5.6 21.25 5.6H19.83C19.5 6.77 18.42 7.64 17.14 7.64C15.86 7.64 14.78 6.77 14.45 5.6H2.75C2.34 5.6 2 5.26 2 4.85C2 4.43 2.34 4.1 2.75 4.1H14.45C14.78 2.92 15.86 2.06 17.14 2.06C18.42 2.06 19.5 2.92 19.83 4.1H21.25C21.66 4.1 22 4.43 22 4.85Z"/>
     </Svg>
   );
 };

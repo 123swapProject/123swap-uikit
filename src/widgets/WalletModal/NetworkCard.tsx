@@ -14,6 +14,7 @@ interface Props {
 
 const StyledButton = styled(Button)`
   width: 25%;
+  background: ${({ theme }) => theme.colors.inputSecondary};
   & div {
     font-size: 14px;
   }

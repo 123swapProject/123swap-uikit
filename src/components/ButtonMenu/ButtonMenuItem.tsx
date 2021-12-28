@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { getParseTreeNode } from "typescript";
 import Button from "../Button/Button";
 import { BaseButtonProps, PolymorphicComponent, variants } from "../Button/types";
 import { ButtonMenuItemProps } from "./types";
@@ -10,7 +11,7 @@ interface InactiveButtonProps extends BaseButtonProps {
 
 const InactiveButton: PolymorphicComponent<InactiveButtonProps, "button"> = styled(Button)<InactiveButtonProps>`
   background-color: transparent;
-  color: ${({ theme, variant }) => (variant === variants.PRIMARY ? theme.colors.primary : theme.colors.textSubtle)};
+  color: ${({ theme }) => theme.colors.inputSecondary};
   &:hover:not(:disabled):not(:active) {
     background-color: transparent;
   }
@@ -23,10 +24,10 @@ const ButtonMenuItem: PolymorphicComponent<ButtonMenuItemProps, "button"> = ({
   ...props
 }: ButtonMenuItemProps) => {
   if (!isActive) {
-    return <InactiveButton forwardedAs={as} variant="tertiary" {...props} />;
+    return <InactiveButton forwardedAs={as} variant={variant} {...props} />;
   }
 
-  return <Button as={as} variant={variant} {...props} style={{color: "#fff", background: "#777E90", borderRadius: "50px"}} />;
+  return <Button as={as} variant="active" {...props} style={{borderRadius: "50px"}} />;
 };
 
 export default ButtonMenuItem;

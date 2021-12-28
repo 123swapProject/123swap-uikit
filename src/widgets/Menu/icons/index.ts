@@ -28,3 +28,4 @@ export { default as FacebookIcon } from "./Facebook";
 export { default as DiscordIcon } from "./Discord";
 export { default as MediumIcon } from "./Medium";
 export { default as GithubIcon } from "./Github";
+export { default as LogotypeIcon } from "./Logotype";

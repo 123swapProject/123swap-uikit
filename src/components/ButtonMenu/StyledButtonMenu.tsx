@@ -18,7 +18,7 @@ const StyledButtonMenu = styled.div<{ variant: Variant }>`
   & > button:not(:last-child),
   & > a:not(:last-child) {
     border-radius: 0;
-    border-right: solid 2px #353945;
+    border-right: solid 2px ${({ theme }) => theme.colors.borderColor};
   }
 `;
 

@@ -14,8 +14,8 @@ const PriceLink = styled.a`
   justify-content: flex-start;
   padding: 20px;
   width: 100%;
-  border-top: solid 1px #23262F;
-  border-bottom: solid 1px #23262F;
+  border-top: ${({ theme }) => theme.colors.borderColor};
+  border-bottom: ${({ theme }) => theme.colors.borderColor};
   svg {
     transition: transform 0.3s;
   }
@@ -28,8 +28,8 @@ const PriceLink = styled.a`
 const SkeletonWrap = styled.div`
   width: 100%;
   padding: 20px;
-  border-top: solid 1px #23262F;
-  border-bottom: solid 1px #23262F;
+  border-top: solid 1px ${({ theme }) => theme.colors.borderColor};
+  border-bottom: solid 1px ${({ theme }) => theme.colors.borderColor};
 
 `;
 

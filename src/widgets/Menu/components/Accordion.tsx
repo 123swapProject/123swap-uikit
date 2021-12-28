@@ -20,7 +20,7 @@ const Container = styled.div`
   // Safari fix
   flex-shrink: 0;
   & svg {
-    fill: none;
+    fill: ${({ theme }) => theme.colors.textMenu};
   }
 `;
 
